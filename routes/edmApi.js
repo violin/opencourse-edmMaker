@@ -99,7 +99,7 @@ exports.route = function () {
 
     	console.log('下载文件名称：' + fileName);
 
-        var dest = ROOT + 'res/cache/' + fileName;
+        var dest = ROOT + 'cache/' + fileName;
 
         console.log('下载路径：' + dest);
 
