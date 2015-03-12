@@ -1,0 +1,1 @@
+sass --watch --scss --no-cache --unix-newlines res/scss:res/css -t expanded

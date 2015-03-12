@@ -1,0 +1,196 @@
+/* index */
+html{ width:100%; height:100%; overflow:hidden;}
+body{ min-width:1080px; height:100%; overflow:hidden;}
+
+/* layout */
+.g-container{ 
+	left:0;
+	top:0;
+	bottom:0;
+	width:100%;
+	overflow:hidden;
+
+	.g-left{
+		z-index:2;
+		top:0;
+		right:480px;
+		bottom:0;
+		left:0;
+		overflow:hidden;
+		border-right:1px solid #bbb;
+		box-shadow:0 0 20px #ccc;
+	}	
+
+	.g-right{
+		z-index:1;
+		top:0;
+		right:0;
+		bottom:0;
+		overflow:hidden;
+		width:480px;
+	}
+}
+
+/* left */
+.m-preview{
+	width:100%;
+	height:100%;
+	overflow:auto;
+
+	.edmpage{
+		background-color:#f8f8f8;
+		padding:40px 0;
+
+		.imgcontainer{
+			background-color:#ddd;
+			margin:0 auto;
+			width:500px;
+			height:700px; 
+
+			img{ width:100%; height:100%;}
+
+			.links{
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+
+				.link{
+					position:absolute;
+					top:0;
+					left:0;
+					width:0;
+					height:0;
+					border:2px dotted #aaa;
+					cursor:pointer;
+				}
+			}
+		}
+	}
+}
+
+/* right */
+.m-mode{
+	width:100%;
+	height:100%;
+	overflow:auto;
+
+	.con{
+		padding:10px 15px;
+		font-size:13px;
+		color:#666;
+		overflow:hidden;
+		
+		.titwrap{
+			height:25px;
+
+			.stit{
+				color:#333;
+				font-size:18px;
+				line-height:25px;
+			}
+
+			.cbtn{
+				text-align:center;
+				display:block;
+				line-height:23px;
+				color:#666;
+				padding:0 10px;
+				font-size:14px;
+				margin-left:10px;
+				border-radius:4px;
+				border:1px solid #aaa;
+
+				&:hover{
+					color:#fff;
+					background-color:#206740;
+				}
+			}
+		}
+
+		input[type="text"]{ 
+			border:none;
+			line-height:26px;	
+			color:#666;
+			font-size:13px;			
+		}
+
+		.dataItemsWrap{
+			margin-right:-20px;
+		}
+		
+		.dataItems{
+			margin:15px 0;
+
+			.short{
+				width:213px;
+			}
+
+			.dataItem{
+				border-radius:3px;
+				border:1px solid #ccc;
+				margin:0 20px 15px 0;
+				
+				.tit{
+					height:26px;
+					line-height:26px;
+					padding:0 10px;
+					background-color:#ccc;
+				}
+
+				.inp{
+					padding:5px 10px;
+				
+					input[type="text"]{ 
+						width:100%;
+					}
+				}
+
+			}
+		}
+
+		.addlinkbtn{
+			text-align:center;
+			display:block;
+			line-height:30px;
+			color:#999;
+			margin-bottom:15px;
+			border-radius:4px;
+			border:1px solid #aaa;
+
+			&:hover{
+				color:#fff;
+				background-color:#206740;
+			}
+		}
+
+		.linkItems{
+			margin:15px 0;
+
+			.linkItem{
+				border-radius:3px;
+				border:1px solid #aaa;
+				margin:0 0 15px 0;
+				
+				.tit{
+					height:26px;
+					line-height:26px;
+					padding:0 10px;
+					background-color:#ccc;
+				}
+
+				.inpline{ 
+					padding:4px 0;
+					height:26px;
+
+					.lab{ line-height:26px; width:50px; margin-left:10px;}
+					.inp1{ width:360px;}
+					.inp2{ width:100px;}
+					.inp3{ width:50px;}
+					
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* style */
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th {
+  text-align: left;
+  font-weight: normal;
+}
+
+html, body, fieldset, img, iframe, abbr {
+  border: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+i, cite, em, var, address, dfn {
+  font-style: normal;
+}
+
+[hidefocus], summary {
+  outline: 0;
+}
+
+li {
+  list-style: none;
+}
+
+sup, sub {
+  font-size: 83%;
+}
+
+pre, code, kbd, samp {
+  font-family: inherit;
+}
+
+q:before, q:after {
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+label, summary {
+  cursor: default;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+em, strong, b {
+  font-weight: bold;
+}
+
+del, ins, u, s, a, a:hover {
+  text-decoration: none;
+}
+
+body, textarea, input, button, select, keygen, legend {
+  font: 12px/1.14 "Arial","Hiragino Sans GB", \5b8b\4f53, "Georgia", "serif";
+  color: #333;
+  outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6, small {
+  font-family: "Arial","Hiragino Sans GB","Microsoft YaHei", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+  line-height: 150%;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 1.17em;
+  margin: .6em 0 0.33em 0;
+}
+
+h6 {
+  font-size: .75em;
+}
+
+body {
+  background: #fff;
+}
+
+a {
+  color: #333;
+}
+
+.clear:after, .f-cb:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear, .f-cb {
+  zoom: 1;
+}
+
+.left, .f-fl {
+  float: left;
+}
+
+.right, .f-fr {
+  float: right;
+}
+
+.rel, .f-pr {
+  position: relative;
+}
+
+.abs, .f-pa {
+  position: absolute;
+}
+
+.fixed, .f-fxd {
+  position: fixed;
+}
+
+.nowrp, .f-thide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notxt, .f-hide {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.ohide, .f-ohide {
+  overflow: hidden;
+}
+
+.f-ib {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.hide, .f-dn {
+  display: none;
+}
+
+.shadow, .f-shadow {
+  box-shadow: 0px 2px 2px #ccc;
+}
+
+.shadow1, .f-shadow1 {
+  box-shadow: 0px 1px 1px #ccc;
+}
+
+/* 非衬线字体 -- 用于标题 */
+.f-f0 {
+  font-family: "Arial","Hiragino Sans GB","Microsoft YaHei", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+}
+
+/* 衬线字体 -- 用于正文 */
+.f-f1 {
+  font-family: "Arial","Hiragino Sans GB", \5b8b\4f53, "Georgia", "serif";
+}
+
+/* 字体颜色 */
+.f-c0 {
+  color: #000;
+}
+
+.f-c3 {
+  color: #333;
+}
+
+.f-c6 {
+  color: #666;
+}
+
+.f-c9 {
+  color: #999;
+}
+
+.f-cf {
+  color: #fff;
+}
+
+.f-cgreen {
+  color: #09924b;
+}
+
+/* 公开课统一绿色 */
+.f-cyellow {
+  color: #ffbc62;
+}
+
+/* 公开课统一黄色 */
+.f-cted {
+  color: #c81400;
+}
+
+/* ted统一红色 */
+/* 统一设置hover颜色 */
+a .f-c0:hover, a.f-c0:hover,
+a .f-c3:hover, a.f-c3:hover,
+a .f-c6:hover, a.f-c6:hover,
+a .f-c9:hover, a.f-c9:hover,
+a .f-cgreen:hover {
+  color: #09924b;
+}
+
+/*# sourceMappingURL=style.css.map */

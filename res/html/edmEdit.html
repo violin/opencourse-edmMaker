@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>公开课直邮编辑器</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/edmEdit.css"/>
+</head>
+<body class="f-pr">
+    <div class="g-container f-pa">
+		
+		<div class="g-left f-pa">
+			<div class="m-preview" id="j-edm-preview">
+				<div class="edmpage j-page">
+					<div class="imgcontainer f-pr j-imgcontainer">
+						<img class="j-img" src="" width="" height="">
+
+						<div class="links f-pa j-links">
+							<!--<div class="link"></div>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="g-right f-pa">
+			<div class="m-mode" id="j-edm-mode">
+				<div class="con">
+					<!-- tit -->
+					<h1 class="titwrap f-cb">
+						<span class="f-fl stit">
+							公开课直邮编辑器 1.0
+						</span>
+
+						<a class="f-fr cbtn j-preview" target="_blank">预览(下载)</a>
+						<a class="f-fr cbtn j-save">保存</a>
+					</h1>
+					
+					<div class="dataItemsWrap">	
+						<div class="dataItems">
+							<div class="dataItem">
+								<h3 class="tit">直邮名称(英文)</h3>
+								<div class="inp">
+									<input type="text" class="j-value" data-attr="name" value="">
+								</div>
+							</div>
+
+							<div class="dataItem">
+								<h3 class="tit">标题</h3>
+								<div class="inp">
+									<input type="text" class="j-value" data-attr="title" value="">
+								</div>
+							</div>
+
+							<div class="f-cb">
+								<div class="dataItem f-fl short">
+									<h3 class="tit">图片地址</h3>
+									<div class="inp">
+										<input type="text" class="j-value" data-attr="imageurl" value="">
+									</div>
+								</div>
+
+								<div class="dataItem f-fl short">
+									<h3 class="tit">图片描述</h3>
+									<div class="inp">
+										<input type="text" class="j-value" data-attr="imagealt" value="">
+									</div>
+								</div>
+							</div>
+							
+							<div class="f-cb">
+								<div class="dataItem f-fl short">
+									<h3 class="tit">图片宽度</h3>
+									<div class="inp">
+										<input type="text" class="j-value" data-attr="width" value="">
+									</div>
+								</div>
+
+								<div class="dataItem f-fl short">
+									<h3 class="tit">图片高度</h3>
+									<div class="inp">
+										<input type="text" class="j-value" data-attr="height" value="">
+									</div>
+								</div>
+							</div>
+
+							<div class="f-cb">
+								<div class="dataItem f-fl short">
+									<h3 class="tit">背景色</h3>
+									<div class="inp">
+										<input type="text" class="j-value" data-attr="backgroundcolor" value="">
+									</div>
+								</div>
+
+								<div class="dataItem f-fl short">
+									<h3 class="tit">上下间距</h3>
+									<div class="inp">
+										<input type="text" class="j-value" data-attr="paddingtopbottom" value="">
+									</div>
+								</div>
+							</div>
+							
+
+						</div>
+					</div>	
+
+					<a class="addlinkbtn f-f0 j-addlink">添加一个链接</a>
+
+					<div class="linkItems j-links">
+						
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <!-- template 
+		<div class="linkItem">
+			<h3 class="tit f-cb">链接<a class="j-dellink f-fr" data-index="">删除</a></h3>
+			<div class="inpline f-cb">
+				<span class="f-fl lab">链接:</span>
+				<input type="text" class="f-fl inp1" value="">
+			</div>
+			<div class="inpline f-cb">
+				<span class="f-fl lab">描述:</span>
+				<input type="text" class="f-fl inp1" value="">
+			</div>
+			<div class="inpline f-cb">
+				<span class="f-fl lab">坐标X:</span>
+				<input type="text" class="f-fl inp3" value="">
+				<span class="f-fl lab">坐标X:</span>
+				<input type="text" class="f-fl inp3" value="">
+				<span class="f-fl lab">宽度:</span>
+				<input type="text" class="f-fl inp3" value="">
+				<span class="f-fl lab">高度:</span>
+				<input type="text" class="f-fl inp3" value="">
+			</div>
+		</div>
+	-->
+
+    <script type="text/javascript" src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/js/vendor/underscore-min.js"></script>
+    <script type="text/javascript" src="/js/vendor/backbone-min.js"></script>
+    <script type="text/javascript" src="/js/index/edmModel.js"></script>
+    <script type="text/javascript" src="/js/index/edmPreviewView.js"></script>
+    <script type="text/javascript" src="/js/index/edmEditView.js"></script>
+    <script type="text/javascript">
+    <% if(fn){ %>
+    window.fn = "<%=fn %>";
+    <% } %>
+    </script>
+    <script type="text/javascript" src="/js/index/main.js"></script>
+</body>
+</html>

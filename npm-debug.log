@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.7.0
+3 info using node@v0.10.5
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/wjz/work/opencourse-edmMaker',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/wjz/.npm/opencourse-edmMaker/1.0.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/wjz/.npm/opencourse-edmMaker/1.0.0/package.tgz',
+9 verbose tar pack   '/Users/wjz/work/opencourse-edmMaker' ]
+10 verbose tarball /Users/wjz/.npm/opencourse-edmMaker/1.0.0/package.tgz
+11 verbose folder /Users/wjz/work/opencourse-edmMaker
+12 info prepublish opencourse-edmMaker@1.0.0
+13 verbose addLocalTarball adding from inside cache /Users/wjz/.npm/opencourse-edmMaker/1.0.0/package.tgz
+14 silly cache afterAdd opencourse-edmMaker@1.0.0
+15 verbose afterAdd /Users/wjz/.npm/opencourse-edmMaker/1.0.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/wjz/.npm/opencourse-edmMaker/1.0.0/package/package.json written
+17 silly publish { name: 'opencourse-edmMaker',
+17 silly publish   version: '1.0.0',
+17 silly publish   description: 'opencourse edm maker',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   keywords: [ 'edm' ],
+17 silly publish   author: { name: 'wjz' },
+17 silly publish   license: 'ISC',
+17 silly publish   devDependencies: {},
+17 silly publish   dependencies: { ejs: '^2.2.4' },
+17 silly publish   readme: 'ERROR: No README data found!',
+17 silly publish   _id: 'opencourse-edmMaker@1.0.0',
+17 silly publish   _shasum: 'ccc94894087e2fc5debb058532624e591433a096',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name opencourse-edmMaker
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/opencourse-edmMaker
+22 verbose publish registryBase https://registry.npmjs.org/
+23 silly publish uploading /Users/wjz/.npm/opencourse-edmMaker/1.0.0/package.tgz
+24 verbose stack Error: Invalid name: "opencourse-edmMaker"
+24 verbose stack     at ensureValidName (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:322:15)
+24 verbose stack     at Object.module.exports.fixNameField (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:211:5)
+24 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:41:11)
+24 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:135:14
+24 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/npm/lib/utils/map-to-registry.js:55:3)
+24 verbose stack     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:105:3)
+24 verbose stack     at Array.1 (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+24 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+24 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+24 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+25 verbose cwd /Users/wjz/work/opencourse-edmMaker
+26 error Darwin 14.0.0
+27 error argv "node" "/usr/local/bin/npm" "publish"
+28 error node v0.10.5
+29 error npm  v2.7.0
+30 error Invalid name: "opencourse-edmMaker"
+31 error If you need help, you may report this error at:
+31 error     <http://github.com/npm/npm/issues>
+32 verbose exit [ 1, true ]

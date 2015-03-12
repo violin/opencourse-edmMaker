@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>公开课直邮编辑器</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/index.css"/>
+</head>
+<body class="f-pr">
+    <div class="m-index f-pa">
+        <h1 class="stit">公开课直邮编辑器</h1>
+		
+        <div class="search f-cb">
+            <input type="text" class="txt f-fl" placeholder="输入直邮名称查询" value="" id="j-name">
+            <a class="sbtn f-fl" id="j-search">编辑</a>
+        </div>
+
+		<a class="newbtn" href="/edmEdit">创建新直邮</a>
+		
+    </div>
+
+    <script type="text/javascript" src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+    (function(jq) {
+        var name;
+
+        function cbSearch(data) {
+            if(!!data && data.result == 1){
+                window.open('/edmEdit?fn=' + name, '_self');
+            }else{
+                alert('该直邮不存在');
+            }
+        }
+
+        jq('#j-search').on('click', function(event) {
+            name = jq.trim(jq('#j-name').val());
+
+            if (name == '') {
+                alert('请输入直邮名称');
+                return;
+            };
+
+            jq.get('/edm/search', {
+                fn : name
+            }, cbSearch);
+        });
+
+    })($);
+    </script>
+</body>
+</html>
