@@ -1,0 +1,16 @@
+/* error */
+.m-error {
+  padding: 50px;
+}
+.m-error h1 {
+  font-size: 40px;
+  color: #666;
+  line-height: 2;
+}
+.m-error p.msg {
+  color: #999;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/*# sourceMappingURL=error.css.map */
